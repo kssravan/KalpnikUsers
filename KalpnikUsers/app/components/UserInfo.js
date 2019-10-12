@@ -5,13 +5,19 @@ class UserInfo extends Component {
     render() {
         return (
             <View style = {styles.container} >
-                <View style = {styles.userInfo}> 
-
                 <View style = {styles.NameContainer}> 
-                    <Text style= {styles.textColor}>FirstName</Text>
-                    <Text style= {styles.textColor}>{this.props.userDetail.firstName} </Text>
+                    <Text style= {styles.heading}>First Name :</Text>
+                    <Text style= {styles.title}>{this.props.userDetail.firstName} </Text>
                 </View>
 
+                <View style = {styles.NameContainer}> 
+                    <Text style= {styles.heading}>Last Name :</Text>
+                    <Text style= {styles.title}>{this.props.userDetail.lastName} </Text>
+                </View>
+
+                <View style = {styles.NameContainer}> 
+                    <Text style= {styles.heading}>Email :</Text>
+                    <Text style= {styles.title}>{this.props.userDetail.email} </Text>
                 </View>
             </View>
         );
@@ -27,20 +33,22 @@ const styles = StyleSheet.create({
         borderWidth: 1.0,
         borderColor: 'grey',
     },
-    userInfo: {
-        flex:1,
-        flexDirection:'row'
-    },
     NameContainer: {
-        flex:1,
-        flexDirection:'row'
+        flexDirection: 'row',
+        margin:10,
     },
-    headingLabel: {
-        
-    },
+    heading: {
+        color: "black",
+        alignContent: 'center',
+        textAlign: 'center',
+        fontSize: 20,
 
-    textColor: {
-        flex:1,
-        margin:20
-    }
+    },
+    title: {
+        color: "black",
+        alignContent: 'center',
+        textAlign: 'center',
+        fontSize: 20,
+        fontWeight: 'bold',
+    },
 });

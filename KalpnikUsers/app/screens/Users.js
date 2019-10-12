@@ -147,6 +147,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(Users)
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        marginBottom:20,
     }
 });
 
