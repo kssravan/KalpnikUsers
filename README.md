@@ -15,10 +15,10 @@ Features
 
 1. Checking for internet connection and display internet connectivity message.
 2. Checking for network error while getting user list
-3. display activity indicator while the request is in progress
+3. Display activity indicator while the request is in progress
 4. Display users list when the request reponse is received.
 5. Users are stored in Redux.
-6. Create new users screen, feature, and saving the new user to redux
-7. user details screen, delete user feature.
-8. navigation feature is used with custom navigation used in two places
+6. Create new users screen with saving new user feature, and saving the new user to redux
+7. User details screen with delete user feature and updating in redux.
+8. Navigation is used in the application with custom navigation component for users screen and create new user screen.
 
